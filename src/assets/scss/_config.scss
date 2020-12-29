@@ -1,0 +1,47 @@
+$website-width: 1200px;
+$primary-color: #4596cb;
+$secondary-color: #115989;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$medium-dark-color: #a3a3a3;
+$dark-color: #333;
+$body-color: #fafafa;
+
+//Set Text Color
+@function set-text-color($color) {
+	@if (lightness($color) > 50) {
+		@return #333;
+	} @else {
+		@return #fff;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.6;
+	background: $body-color;
+	color: $dark-color;
+}
+
+a {
+	text-decoration: none;
+	color: $dark-color;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	margin-bottom: 10px;
+}
