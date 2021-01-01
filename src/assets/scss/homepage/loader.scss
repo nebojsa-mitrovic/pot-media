@@ -14,16 +14,16 @@
 		position: relative;
 		-webkit-animation: spin 2s linear infinite;
 		animation: spin 2s linear infinite;
-		z-index: 1001;
+		z-index: 101;
 	}
 
 	&__section {
+		background: $primary-color;
 		position: fixed;
 		top: 0;
-		background: #333;
 		width: 51%;
 		height: 100%;
-		z-index: 1000;
+		z-index: 100;
 
 		&--left {
 			left: 0;
@@ -35,34 +35,29 @@
 
 	&__text {
 		animation: colorFill 1.5s ease forwards 3s;
+	}
 
-		.triger-1 {
-			stroke-dasharray: 449px;
-			stroke-dashoffset: 449px;
+	&__letter {
+		stroke-dasharray: 28rem;
+		stroke-dashoffset: 28rem;
+
+		&--1 {
 			animation: animateText 2s ease forwards;
 		}
 
-		.triger-2 {
-			stroke-dasharray: 565;
-			stroke-dashoffset: 565px;
+		&--2 {
 			animation: animateText 2s ease forwards 0.5s;
 		}
 
-		.triger-3 {
-			stroke-dasharray: 449px;
-			stroke-dashoffset: 449px;
+		&--3 {
 			animation: animateText 2s ease forwards 0.7s;
 		}
 
-		.triger-4 {
-			stroke-dasharray: 449px;
-			stroke-dashoffset: 449px;
+		&--4 {
 			animation: animateText 2s ease forwards 0.9s;
 		}
 
-		.triger-5 {
-			stroke-dasharray: 227px;
-			stroke-dashoffset: 227px;
+		&--5 {
 			animation: animateText 2s ease forwards 1.3s;
 		}
 	}
