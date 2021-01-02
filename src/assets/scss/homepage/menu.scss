@@ -1,6 +1,47 @@
 .menu {
-	img {
+	font-family: "Montserrat", sans-serif;
+	color: $dark-color;
+	position: fixed;
+	top: 10rem;
+	left: 10rem;
+
+	&__logo {
 		height: 5rem;
 		width: auto;
+	}
+
+	.letter-wrap {
+		display: inline-block;
+		position: relative;
+		font-size: 1.6em;
+		font-weight: bold;
+	}
+
+	.letter-wrap * {
+		pointer-events: none;
+	}
+
+	.letter-wrap__word {
+		display: inline-flex;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.letter-wrap__char {
+		display: inline-block;
+		position: relative;
+		text-transform: uppercase;
+
+		&-inner {
+			display: inline-block;
+
+			&:after {
+				content: attr(data-letter);
+				position: absolute;
+				top: 100%;
+				left: 0;
+				color: $white;
+			}
+		}
 	}
 }
