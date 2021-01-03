@@ -1,0 +1,43 @@
+.banner {
+	background: red;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-flow: column;
+
+	&__headline {
+		-webkit-animation: spin 2s linear infinite;
+		animation: spin 2s linear infinite;
+	}
+
+	&__text {
+		animation: colorFill 1.5s ease forwards 8s;
+	}
+
+	&__letter {
+		stroke-dasharray: 28rem;
+		stroke-dashoffset: 28rem;
+
+		&--1 {
+			animation: animateText 2s ease forwards 5s;
+		}
+
+		&--2 {
+			animation: animateText 2s ease forwards 5.5s;
+		}
+
+		&--3 {
+			animation: animateText 2s ease forwards 5.7s;
+		}
+
+		&--4 {
+			animation: animateText 2s ease forwards 5.9s;
+		}
+
+		&--5 {
+			animation: animateText 2s ease forwards 6.3s;
+		}
+	}
+}
