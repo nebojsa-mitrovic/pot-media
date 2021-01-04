@@ -16,6 +16,7 @@ h4 {
 	font-size: 1.2rem;
 }
 
+// Buttons
 .btn {
 	display: inline-block;
 	min-width: 180px;
@@ -42,4 +43,12 @@ h4 {
 	&:hover {
 		background: $light-color;
 	}
+}
+
+// Class to center all content
+.center-all {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }

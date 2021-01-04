@@ -5,7 +5,7 @@
 // Displaying Homepage after 5 seconds
 setTimeout(function loader() {
 	document.querySelector("body").classList.add("loaded");
-}, 5000);
+}, 2000);
 
 // Menu Letter Animation
 {
