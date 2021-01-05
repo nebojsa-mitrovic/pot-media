@@ -9,53 +9,57 @@
 	background: brown;
 
 	&__content {
-		width: 202px;
-		height: 202px;
-		overflow: hidden;
-	}
-
-	&__container {
-		width: 200px;
-		height: 200px;
-		border: 2px solid rgba(235, 235, 236, 0.1);
-
-		&:before,
-		&:after {
-			position: absolute;
-			content: "";
-			display: block;
-			width: 40px;
-			height: 0px;
-		}
-
-		&:before {
-			top: 0;
-			right: 0;
-			border-top: 2px solid #fff;
-			border-right: 2px solid #fff;
-			transform: translate(-198px, -2px);
-			animation: preloaderSpinBefore 2s infinite linear;
-		}
-
-		&:after {
-			bottom: 0;
-			left: 0;
-			border-bottom: 2px solid #fff;
-			border-left: 2px solid #fff;
-			transform: translate(200px, 2px);
-			animation: preloaderSpinAfter 2s 0.9s infinite linear;
-		}
-	}
-
-	&__position {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%) scale(1, 1) translateZ(0);
+		width: 200px;
+		height: 200px;
+		border: 3px solid brown;
+		border-radius: 50%;
+		overflow: hidden;
+
+		&:before {
+			position: absolute;
+			content: "";
+			display: block;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, 104%);
+			width: 370px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #ef4361;
+			animation: fillInCircle 2s forwards linear;
+			z-index: 1;
+		}
+	}
+
+	&__container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(1, 1) translateZ(0);
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		border-top: 5px solid brown;
+		overflow: hidden;
+		animation: jiggleCircle 2s infinite linear;
+		z-index: 2;
 	}
 
 	&__logo {
-		padding: 3rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 35px;
+		font-weight: 900;
+		color: #ef4361;
+		z-index: 2;
+		transform: translate(-50%, -50%);
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: rgb(240, 240, 241);
 	}
 }
 
