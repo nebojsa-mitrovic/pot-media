@@ -1,0 +1,37 @@
+// Fonts___________________________________________________________________
+$primary-font: "Roboto", sans-serif;
+$menu-font: "Montserrat", sans-serif;
+
+// Colors________________________________________________________________
+// - pallete
+$primary-color: #6799a7;
+$secondary-color: #eecc80;
+$tertiary-color: #eb9843;
+$quaternary-color: #d15453;
+$quinary-color: #ea8787;
+
+// - body
+$body-color: #fafafa;
+
+// - light colors
+$light-color: #f4f4f4;
+
+// - dark colors
+$dark-color: #333;
+
+// - standard
+$black: #000;
+$white: #fff;
+
+// - set Text Color
+@function set-text-color($color) {
+	@if (lightness($color) > 50) {
+		@return #333;
+	} @else {
+		@return #fff;
+	}
+}
+
+// Other________________________________________________________________
+// - menu
+$website-width: 1200px;
