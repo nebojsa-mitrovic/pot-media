@@ -9,13 +9,10 @@
 	background: brown;
 
 	&__content {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%) scale(1, 1) translateZ(0);
-		width: 200px;
-		height: 200px;
-		border: 3px solid brown;
+		transform: scale(1) translateZ(0);
+		width: 14rem;
+		height: 14rem;
+		border: 0.2rem solid brown;
 		border-radius: 50%;
 		overflow: hidden;
 
@@ -26,8 +23,8 @@
 			bottom: 0;
 			left: 50%;
 			transform: translate(-50%, 104%);
-			width: 370px;
-			height: 200px;
+			width: 16rem;
+			height: 14rem;
 			border-radius: 50%;
 			background-color: #ef4361;
 			animation: fillInCircle 2s forwards linear;
@@ -39,9 +36,8 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%) scale(1, 1) translateZ(0);
-		width: 200px;
-		height: 200px;
+		width: 14rem;
+		height: 14rem;
 		border-radius: 50%;
 		border-top: 5px solid brown;
 		overflow: hidden;
@@ -50,15 +46,9 @@
 	}
 
 	&__logo {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		font-size: 35px;
-		font-weight: 900;
 		color: #ef4361;
 		z-index: 2;
-		transform: translate(-50%, -50%);
-		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-width: 0.1rem;
 		-webkit-text-stroke-color: rgb(240, 240, 241);
 	}
 }
