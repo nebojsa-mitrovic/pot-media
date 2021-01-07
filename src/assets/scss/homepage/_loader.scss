@@ -6,13 +6,13 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: 1000;
-	background: brown;
+	background: $primary-color;
 
 	&__content {
 		transform: scale(1) translateZ(0);
 		width: 14rem;
 		height: 14rem;
-		border: 0.2rem solid brown;
+		border: 0.2rem solid $primary-color;
 		border-radius: 50%;
 		overflow: hidden;
 
@@ -26,8 +26,8 @@
 			width: 16rem;
 			height: 14rem;
 			border-radius: 50%;
-			background-color: #ef4361;
-			animation: fillInCircle 2s forwards linear;
+			background-color: $secondary-color;
+			animation: fillInCircle 3.5s forwards linear;
 			z-index: 1;
 		}
 	}
@@ -39,17 +39,14 @@
 		width: 14rem;
 		height: 14rem;
 		border-radius: 50%;
-		border-top: 5px solid brown;
+		border-top: 5px solid $primary-color;
 		overflow: hidden;
 		animation: jiggleCircle 2s infinite linear;
 		z-index: 2;
 	}
 
 	&__logo {
-		color: #ef4361;
 		z-index: 2;
-		-webkit-text-stroke-width: 0.1rem;
-		-webkit-text-stroke-color: rgb(240, 240, 241);
 	}
 }
 
