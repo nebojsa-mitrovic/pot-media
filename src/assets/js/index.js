@@ -7,8 +7,8 @@ setTimeout(function loader() {
 	document.querySelector("body").classList.add("loaded");
 }, 5000);
 
-// Menu Letter Animation
-{
+window.onload = function () {
+	// Menu Letter Animation
 	const letterWrapClass = "letter-wrap";
 	const letterWrapElements = document.getElementsByClassName(letterWrapClass);
 
@@ -61,4 +61,19 @@ setTimeout(function loader() {
 		el.addEventListener("mouseenter", (event) => event.currentTarget.animation.play());
 		el.addEventListener("mouseout", (event) => el.animation.reverse());
 	}
-}
+
+	// Background Color Change
+	const colors = ["", "primary-color", "secondary-color", "tertiary-color", "quaternary-color", "quinary-color"];
+	const sections = [...document.getElementsByClassName("section")];
+
+	window.addEventListener("scroll", function () {
+		const scrollFromTop = window.pageYOffset;
+
+		for (let i = 0; sections.length > i; i++) {
+			if (scrollFromTop <= sections[i].offsetTop) {
+				document.body.className = colors[i];
+				break;
+			}
+		}
+	});
+};
