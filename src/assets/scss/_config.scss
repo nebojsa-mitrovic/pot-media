@@ -9,6 +9,7 @@ body {
 	line-height: 1.6;
 	background: $body-color;
 	color: $dark-color;
+	@include transition(all, 1s, ease-in-out);
 }
 
 a {
