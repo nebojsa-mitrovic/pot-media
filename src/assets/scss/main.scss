@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 @import "variables";
+@import "mixins";
+@import "animations";
 @import "config";
 @import "utilities";
-@import "animations";
 @import "homepage/loader";
 @import "homepage/menu";
 @import "homepage/banner";
+@import "homepage/content";
