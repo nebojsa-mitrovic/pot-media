@@ -8,6 +8,46 @@ setTimeout(function loader() {
 }, 5000);
 
 window.onload = function () {
+	// Cursor
+	const $cursor = $(".cursor"),
+		$follow = $(".cursor-follow"),
+		$links = $("a");
+
+	function moveCursor(e) {
+		TweenLite.to($cursor, 0.3, {
+			x: e.clientX,
+			y: e.clientY,
+		});
+		TweenLite.to($follow, 0.7, {
+			x: e.clientX,
+			y: e.clientY,
+		});
+	}
+
+	function hoverFunc(e) {
+		TweenLite.to($cursor, 0.3, {
+			opacity: 1,
+			scale: 0,
+		});
+		TweenLite.to($follow, 0.3, {
+			scale: 3,
+		});
+	}
+
+	function unhoverFunc(e) {
+		TweenLite.to($cursor, 0.3, {
+			opacity: 1,
+			scale: 1,
+		});
+		TweenLite.to($follow, 0.3, {
+			scale: 1,
+		});
+	}
+
+	$(window).on("mousemove", moveCursor);
+
+	$links.hover(hoverFunc, unhoverFunc);
+
 	// Menu Letter Animation
 	const letterWrapClass = "letter-wrap";
 	const letterWrapElements = document.getElementsByClassName(letterWrapClass);
