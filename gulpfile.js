@@ -27,7 +27,7 @@ const srcFiles = {
 // Assets Files Variables
 const assetsFiles = {
 	scssFiles: assetsScssPath + "**/*.scss",
-	jsFiles: ["node_modules/gsap/dist/gsap.js", assetsJsPath + "index.js"],
+	jsFiles: ["node_modules/jquery/dist/jquery.min.js", "node_modules/gsap/dist/gsap.js", assetsJsPath + "index.js"],
 };
 
 // Source Paths Variables
