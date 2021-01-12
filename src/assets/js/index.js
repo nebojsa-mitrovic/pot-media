@@ -9,8 +9,8 @@ setTimeout(function loader() {
 
 window.onload = function () {
 	// Cursor
-	const $cursor = $(".cursor"),
-		$follow = $(".cursor-follow"),
+	const $cursor = $(".cursor__ball--main"),
+		$follow = $(".cursor__ball--follow"),
 		$links = $("a");
 
 	function moveCursor(e) {
@@ -18,7 +18,7 @@ window.onload = function () {
 			x: e.clientX,
 			y: e.clientY,
 		});
-		TweenLite.to($follow, 0.7, {
+		TweenLite.to($follow, 0.5, {
 			x: e.clientX,
 			y: e.clientY,
 		});
@@ -45,8 +45,10 @@ window.onload = function () {
 	}
 
 	$(window).on("mousemove", moveCursor);
-
-	$links.hover(hoverFunc, unhoverFunc);
+	// $links.hover(hoverFunc, unhoverFunc);
+	$links.on("hover", function () {
+		hoverFunc, unhoverFunc;
+	});
 
 	// Menu Letter Animation
 	const letterWrapClass = "letter-wrap";
