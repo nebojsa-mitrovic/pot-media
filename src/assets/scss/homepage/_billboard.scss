@@ -1,0 +1,16 @@
+.billboard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__packages {
+		display: grid;
+		grid-template-columns: repeat(3, 3fr);
+		gap: 1rem;
+	}
+
+	&__box {
+		border: 1px solid $white;
+		border-radius: 0.5rem;
+	}
+}
