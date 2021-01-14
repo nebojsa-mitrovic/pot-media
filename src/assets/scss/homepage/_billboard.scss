@@ -12,5 +12,31 @@
 	&__box {
 		border: 1px solid $white;
 		border-radius: 0.5rem;
+		flex-direction: column;
+		position: relative;
+		padding: 4rem 1.5rem;
+	}
+
+	&__icon {
+		position: absolute;
+		top: -3rem;
+		height: 5rem;
+		width: 5rem;
+		border-radius: 50%;
+		border: 1px solid $dark-color;
+		color: $white;
+		font-size: 3em;
+
+		&--standard {
+			background: $tertiary-color;
+		}
+
+		&--middle {
+			background: $quaternary-color;
+		}
+
+		&--premium {
+			background: $quinary-color;
+		}
 	}
 }
