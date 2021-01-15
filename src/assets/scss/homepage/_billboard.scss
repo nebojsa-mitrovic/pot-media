@@ -7,6 +7,7 @@
 		display: grid;
 		grid-template-columns: repeat(3, 3fr);
 		gap: 1rem;
+		padding: 3rem 0;
 	}
 
 	&__box {
@@ -19,7 +20,7 @@
 
 	&__icon {
 		position: absolute;
-		top: -3rem;
+		top: -2.5rem;
 		height: 5rem;
 		width: 5rem;
 		border-radius: 50%;
@@ -38,5 +39,12 @@
 		&--premium {
 			background: $quinary-color;
 		}
+	}
+
+	&__btn {
+		position: absolute;
+		bottom: -2.5rem;
+		width: 12rem;
+		height: 4rem;
 	}
 }
