@@ -24,9 +24,9 @@
 		height: 5rem;
 		width: 5rem;
 		border-radius: 50%;
-		border: 1px solid $dark-color;
 		color: $white;
 		font-size: 3em;
+		box-shadow: 0 1rem 1.5rem 0 rgba($dark-color, 0.375), inset 0 -3px 0 0 rgba($dark-color, 0.125);
 
 		&--standard {
 			background: $tertiary-color;
@@ -46,5 +46,47 @@
 		bottom: -2.5rem;
 		width: 12rem;
 		height: 4rem;
+
+		.btn {
+			box-shadow: 0 0.6rem 1rem rgba($dark-color, 0.375);
+			@include transition(all, 0.3s, ease-in-out);
+
+			&:hover {
+				transform: translateY(-0.5rem);
+			}
+		}
+
+		&--standard {
+			.btn {
+				background: $tertiary-color;
+
+				&:hover {
+					background-color: $tertiary-color;
+					box-shadow: 0 1rem 1.5rem $tertiary-color-transparent;
+				}
+			}
+		}
+
+		&--middle {
+			.btn {
+				background: $quaternary-color;
+
+				&:hover {
+					background-color: $quaternary-color;
+					box-shadow: 0 1rem 1.5rem $quaternary-color-transparent;
+				}
+			}
+		}
+
+		&--premium {
+			.btn {
+				background: $quinary-color;
+
+				&:hover {
+					background-color: $quinary-color;
+					box-shadow: 0 1rem 1.5rem $quinary-color-transparent;
+				}
+			}
+		}
 	}
 }
