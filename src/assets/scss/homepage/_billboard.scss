@@ -3,6 +3,10 @@
 	justify-content: center;
 	align-items: center;
 
+	.container {
+		max-width: 900px;
+	}
+
 	&__packages {
 		display: grid;
 		grid-template-columns: repeat(3, 3fr);
@@ -11,11 +15,25 @@
 	}
 
 	&__box {
-		border: 1px solid $white;
+		border: 0.2rem solid;
 		border-radius: 0.5rem;
+		border: 0.2rem solid;
+		justify-content: flex-start;
 		flex-direction: column;
 		position: relative;
-		padding: 4rem 1.5rem;
+		background: $light-color;
+
+		&--standard {
+			border-color: $tertiary-color;
+		}
+
+		&--middle {
+			border-color: $quaternary-color;
+		}
+
+		&--premium {
+			border-color: $quinary-color;
+		}
 	}
 
 	&__icon {
@@ -39,6 +57,165 @@
 		&--premium {
 			background: $quinary-color;
 		}
+	}
+
+	&__headline {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		width: 100%;
+		height: 6rem;
+		padding: 1rem;
+		border-radius: 0.3rem 0.3rem 0 0;
+
+		&--standard {
+			background: linear-gradient(
+				0.45turn,
+				lighten($tertiary-color, 20%),
+				lighten($tertiary-color, 10%),
+				darken($tertiary-color, 10%),
+				darken($tertiary-color, 20%),
+				darken($tertiary-color, 30%)
+			);
+		}
+
+		&--middle {
+			background: linear-gradient(
+				0.45turn,
+				lighten($quaternary-color, 20%),
+				lighten($quaternary-color, 10%),
+				darken($quaternary-color, 10%),
+				darken($quaternary-color, 20%),
+				darken($quaternary-color, 30%)
+			);
+		}
+
+		&--premium {
+			background: linear-gradient(
+				0.45turn,
+				lighten($quinary-color, 20%),
+				lighten($quinary-color, 10%),
+				darken($quinary-color, 10%),
+				darken($quinary-color, 20%),
+				darken($quinary-color, 30%)
+			);
+		}
+
+		h3 {
+			font-size: 1.5em;
+		}
+	}
+
+	&__pricing {
+		width: 100%;
+
+		&--standard {
+			background: $tertiary-color;
+		}
+
+		&--middle {
+			background: $quaternary-color;
+		}
+
+		&--premium {
+			background: $quinary-color;
+		}
+	}
+
+	.price {
+		font-weight: bold;
+
+		&__currency {
+			font-size: 1.3em;
+			top: 0.7rem;
+		}
+
+		&__sum {
+			font-size: 3em;
+		}
+
+		&__period {
+			font-size: 1em;
+			font-style: italic;
+		}
+	}
+
+	&__info {
+		margin: 2rem 1.5rem 0.5rem 1.5rem;
+		border-bottom: 2px solid;
+
+		span {
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+
+		&--standard {
+			border-color: $tertiary-color;
+
+			span {
+				color: $tertiary-color;
+			}
+		}
+
+		&--middle {
+			border-color: $quaternary-color;
+
+			span {
+				color: $quaternary-color;
+			}
+		}
+
+		&--premium {
+			border-color: $quinary-color;
+
+			span {
+				color: $quinary-color;
+			}
+		}
+	}
+
+	&__discount {
+		margin: 0 1.5rem;
+
+		h4 {
+			font-size: 1em;
+		}
+
+		span {
+			font-style: italic;
+		}
+
+		&--standard {
+			border-color: $tertiary-color;
+
+			h4,
+			span {
+				color: $tertiary-color;
+			}
+		}
+
+		&--middle {
+			border-color: $quaternary-color;
+
+			h4,
+			span {
+				color: $quaternary-color;
+			}
+		}
+
+		&--premium {
+			border-color: $quinary-color;
+
+			h4,
+			span {
+				color: $quinary-color;
+			}
+		}
+	}
+
+	&__pdv-info {
+		font-size: 0.6em;
+		margin-bottom: 3rem;
 	}
 
 	&__btn {
