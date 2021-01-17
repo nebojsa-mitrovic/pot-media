@@ -30,7 +30,7 @@ $dark-color: #333;
 $black: #000;
 $white: #fff;
 
-// - set Text Color
+// - set text color
 @function set-text-color($color) {
 	@if (lightness($color) > 50) {
 		@return #333;
