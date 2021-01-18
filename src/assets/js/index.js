@@ -8,6 +8,9 @@ setTimeout(function loader() {
 }, 5000);
 
 window.onload = function () {
+	// AOS Init
+	AOS.init();
+
 	// Cursor
 	const $cursor = $(".cursor__ball--main"),
 		$follow = $(".cursor__ball--follow"),
