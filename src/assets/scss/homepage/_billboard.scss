@@ -3,6 +3,10 @@
 	justify-content: center;
 	align-items: center;
 
+	h2 {
+		margin-bottom: 2rem;
+	}
+
 	&__packages {
 		display: grid;
 		grid-template-columns: repeat(3, 3fr);
