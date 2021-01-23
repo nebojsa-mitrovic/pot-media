@@ -1,4 +1,4 @@
-.billboard {
+.pricing-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,9 +15,8 @@
 	}
 
 	&__box {
-		border: 0.2rem solid;
-		border-radius: 0.5rem;
-		border: 0.2rem solid;
+		border-radius: 10px;
+		border: 3px solid;
 		flex-direction: column;
 		position: relative;
 		background: $light-color;
@@ -33,13 +32,25 @@
 		&--premium {
 			border-color: $quinary-color;
 		}
+
+		&--standard-social {
+			border-color: $tertiary-color;
+		}
+
+		&--middle-social {
+			border-color: $primary-color;
+		}
+
+		&--premium-social {
+			border-color: $secondary-color;
+		}
 	}
 
 	&__icon {
 		position: absolute;
 		top: -2.5rem;
-		height: 5rem;
-		width: 5rem;
+		height: 80px;
+		width: 80px;
 		border-radius: 50%;
 		color: $white;
 		font-size: 3em;
@@ -56,6 +67,18 @@
 		&--premium {
 			background: $quinary-color;
 		}
+
+		&--standard-social {
+			background: $tertiary-color;
+		}
+
+		&--middle-social {
+			background: $primary-color;
+		}
+
+		&--premium-social {
+			background: $secondary-color;
+		}
 	}
 
 	&__headline {
@@ -63,7 +86,7 @@
 		justify-content: center;
 		align-items: flex-end;
 		width: 100%;
-		height: 6rem;
+		height: 100px;
 		padding: 1rem;
 		border-radius: 0.3rem 0.3rem 0 0;
 
@@ -100,6 +123,39 @@
 			);
 		}
 
+		&--standard-social {
+			background: linear-gradient(
+				0.45turn,
+				lighten($tertiary-color, 20%),
+				lighten($tertiary-color, 10%),
+				darken($tertiary-color, 10%),
+				darken($tertiary-color, 20%),
+				darken($tertiary-color, 30%)
+			);
+		}
+
+		&--middle-social {
+			background: linear-gradient(
+				0.45turn,
+				lighten($primary-color, 20%),
+				lighten($primary-color, 10%),
+				darken($primary-color, 10%),
+				darken($primary-color, 20%),
+				darken($primary-color, 30%)
+			);
+		}
+
+		&--premium-social {
+			background: linear-gradient(
+				0.45turn,
+				lighten($secondary-color, 20%),
+				lighten($secondary-color, 10%),
+				darken($secondary-color, 10%),
+				darken($secondary-color, 20%),
+				darken($secondary-color, 30%)
+			);
+		}
+
 		h3 {
 			font-size: 1.5em;
 		}
@@ -118,6 +174,18 @@
 
 		&--premium {
 			background: $quinary-color;
+		}
+
+		&--standard-social {
+			background: $tertiary-color;
+		}
+
+		&--middle-social {
+			background: $primary-color;
+		}
+
+		&--premium-social {
+			background: $secondary-color;
 		}
 	}
 
@@ -171,6 +239,30 @@
 				color: $quinary-color;
 			}
 		}
+
+		&--standard-social {
+			border-color: $tertiary-color;
+
+			span {
+				color: $tertiary-color;
+			}
+		}
+
+		&--middle-social {
+			border-color: $primary-color;
+
+			span {
+				color: $primary-color;
+			}
+		}
+
+		&--premium-social {
+			border-color: $secondary-color;
+
+			span {
+				color: $secondary-color;
+			}
+		}
 	}
 
 	&__discount {
@@ -210,6 +302,38 @@
 				color: $quinary-color;
 			}
 		}
+
+		&--standard-social {
+			border-color: $tertiary-color;
+
+			h4,
+			span {
+				color: $tertiary-color;
+			}
+		}
+
+		&--middle-social {
+			border-color: $primary-color;
+
+			h4,
+			span {
+				color: $primary-color;
+			}
+		}
+
+		&--premium-social {
+			border-color: $secondary-color;
+
+			h4,
+			span {
+				color: $secondary-color;
+			}
+		}
+	}
+
+	&__price-info {
+		font-size: 0.6em;
+		padding: 0 2rem;
 	}
 
 	&__pdv-info {
@@ -221,7 +345,7 @@
 		position: absolute;
 		bottom: -2.5rem;
 		width: 12rem;
-		height: 4rem;
+		height: 60px;
 
 		.btn {
 			box-shadow: 0 0.6rem 1rem rgba($dark-color, 0.375);
@@ -261,6 +385,39 @@
 				&:hover {
 					background-color: $quinary-color;
 					box-shadow: 0 1rem 1.5rem $quinary-color-transparent;
+				}
+			}
+		}
+
+		&--standard-social {
+			.btn {
+				background: $tertiary-color;
+
+				&:hover {
+					background-color: $tertiary-color;
+					box-shadow: 0 1rem 1.5rem $tertiary-color-transparent;
+				}
+			}
+		}
+
+		&--middle-social {
+			.btn {
+				background: $primary-color;
+
+				&:hover {
+					background-color: $primary-color;
+					box-shadow: 0 1rem 1.5rem $primary-color-transparent;
+				}
+			}
+		}
+
+		&--premium-social {
+			.btn {
+				background: $secondary-color;
+
+				&:hover {
+					background-color: $secondary-color;
+					box-shadow: 0 1rem 1.5rem $secondary-color-transparent;
 				}
 			}
 		}
