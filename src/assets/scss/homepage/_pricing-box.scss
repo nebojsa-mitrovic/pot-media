@@ -1,10 +1,15 @@
-.pricing-box {
+.pricing {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	h2 {
 		margin-bottom: 2rem;
+	}
+
+	&__text {
+		font-size: 1.4em;
+		text-align: center;
 	}
 
 	&__packages {
@@ -22,7 +27,7 @@
 		background: $light-color;
 
 		&--standard {
-			border-color: $tertiary-color;
+			border-color: $primary-color;
 		}
 
 		&--middle {
@@ -57,7 +62,7 @@
 		box-shadow: 0 1rem 1.5rem 0 rgba($dark-color, 0.375), inset 0 -3px 0 0 rgba($dark-color, 0.125);
 
 		&--standard {
-			background: $tertiary-color;
+			background: $primary-color;
 		}
 
 		&--middle {
@@ -93,11 +98,11 @@
 		&--standard {
 			background: linear-gradient(
 				0.45turn,
-				lighten($tertiary-color, 20%),
-				lighten($tertiary-color, 10%),
-				darken($tertiary-color, 10%),
-				darken($tertiary-color, 20%),
-				darken($tertiary-color, 30%)
+				lighten($primary-color, 20%),
+				lighten($primary-color, 10%),
+				darken($primary-color, 10%),
+				darken($primary-color, 20%),
+				darken($primary-color, 30%)
 			);
 		}
 
@@ -165,7 +170,7 @@
 		width: 100%;
 
 		&--standard {
-			background: $tertiary-color;
+			background: $primary-color;
 		}
 
 		&--middle {
@@ -217,10 +222,10 @@
 		}
 
 		&--standard {
-			border-color: $tertiary-color;
+			border-color: $primary-color;
 
 			span {
-				color: $tertiary-color;
+				color: $primary-color;
 			}
 		}
 
@@ -277,11 +282,11 @@
 		}
 
 		&--standard {
-			border-color: $tertiary-color;
+			border-color: $primary-color;
 
 			h4,
 			span {
-				color: $tertiary-color;
+				color: $primary-color;
 			}
 		}
 
@@ -358,11 +363,11 @@
 
 		&--standard {
 			.btn {
-				background: $tertiary-color;
+				background: $primary-color;
 
 				&:hover {
-					background-color: $tertiary-color;
-					box-shadow: 0 1rem 1.5rem $tertiary-color-transparent;
+					background-color: $primary-color;
+					box-shadow: 0 1rem 1.5rem $primary-color-transparent;
 				}
 			}
 		}

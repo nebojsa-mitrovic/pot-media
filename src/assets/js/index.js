@@ -107,7 +107,7 @@ window.onload = function () {
 	}
 
 	// Background Color Change
-	const colors = ["", "primary-color loaded", "secondary-color loaded", "tertiary-color loaded", "quaternary-color loaded", "quinary-color loaded"];
+	const colors = ["primary-color loaded", "secondary-color loaded", "tertiary-color loaded", "quaternary-color loaded", "quinary-color loaded"];
 	const sections = [...document.getElementsByClassName("section")];
 
 	window.addEventListener("scroll", function () {
