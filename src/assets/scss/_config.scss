@@ -9,7 +9,7 @@ body {
 	font-family: $primary-font;
 	line-height: 1.6;
 	background: $primary-color;
-	color: $dark-color;
+	color: $body-color;
 	@include transition(all, 1s, ease-in-out);
 }
 

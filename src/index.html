@@ -337,9 +337,38 @@
 		</section>
 
 		<!-- Kontakt -->
-		<section id="kontakt" class="section">
-			<h2 data-aos="slide-left" data-aos-duration="1000">Kontakt</h2>
-			<p>Za vise informacija kontaktiraj ten as putem emaila: potmeda@gmail.com ili na telwfon 0654506946</p>
+		<section id="kontakt" class="section contact">
+			<div class="container">
+				<h2 data-aos="slide-left" data-aos-duration="1000">Kontakt</h2>
+				<div class="contact__content">
+					<div class="contact__info">
+						<p>Za vise informacija kontaktiraj ten as putem emaila: potmeda@gmail.com ili na telwfon 0654506946</p>
+					</div>
+					<div class="contact__form">
+						<form class="contact-form" action="" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
+							<div class="contact-form__field name">
+								<input type="text" id="name" class="contact-form__text-input" required />
+								<label for="name" class="contact-form__label">IME</label>
+							</div>
+							<div class="contact-form__field email">
+								<input type="email" id="email" class="contact-form__text-input" required />
+								<label for="email" class="contact-form__label">PREZIME</label>
+							</div>
+							<div class="contact-form__field subject">
+								<input type="subject" id="subject" class="contact-form__text-input" required />
+								<label for="subject" class="contact-form__label">TEMA</label>
+							</div>
+							<div class="contact-form__field message">
+								<input type="text" id="message" class="contact-form__text-input" required />
+								<label for="message" class="contact-form__label">PORUKA</label>
+							</div>
+							<div class="submit">
+								<input class="btn" type="submit" value="POŠALJI" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</section>
 	</body>
 </html>

@@ -120,4 +120,13 @@ window.onload = function () {
 			}
 		}
 	});
+
+	// Contact page
+	$(".contact-form__text-input").on("keyup", function () {
+		if ($(this).val()) {
+			$(this).addClass("has-value");
+		} else {
+			$(this).removeClass("has-value");
+		}
+	});
 };
