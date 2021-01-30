@@ -5,11 +5,14 @@
 // Displaying Homepage after 5 seconds
 setTimeout(function loader() {
 	document.querySelector("body").classList.add("loaded");
+	$(".megaphone-img").fadeIn("slow");
 }, 5000);
 
 window.onload = function () {
 	// AOS Init
 	AOS.init();
+
+	$(".megaphone-img").hide();
 
 	// Cursor
 	const $cursor = $(".cursor__ball--main"),
