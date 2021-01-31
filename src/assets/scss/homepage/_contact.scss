@@ -13,6 +13,38 @@
 		gap: 1rem;
 	}
 
+	&__info {
+		padding-top: 4rem;
+
+		a {
+			color: $white;
+			font-size: 1.2em;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 0;
+				height: 2px;
+				right: 0;
+				bottom: 0;
+				background: $white;
+				transition: width 0.2s ease;
+			}
+
+			&:hover:after {
+				width: 100%;
+				background: #fff;
+			}
+		}
+
+		i {
+			color: $white;
+			margin-right: 15px;
+			font-size: 2em;
+		}
+	}
+
 	&-form {
 		text-align: center;
 
@@ -53,7 +85,7 @@
 			font-size: 1.2rem;
 			line-height: 26px;
 			color: $white;
-			transition: transform 0.3s ease-in-out;
+			@include transition();
 		}
 
 		.btn {
