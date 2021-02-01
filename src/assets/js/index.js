@@ -55,6 +55,19 @@ window.onload = function () {
 		hoverFunc, unhoverFunc;
 	});
 
+	// Progress Bar
+	let scrollTop;
+	let viewportHeight;
+	let scrollPercent;
+	let progressBar = document.querySelector("#progress-bar");
+
+	window.addEventListener("scroll", function () {
+		scrollTop = window.scrollY;
+		viewportHeight = document.body.clientHeight - window.innerHeight;
+		scrollPercent = (scrollTop / viewportHeight) * 100;
+		progressBar.setAttribute("value", scrollPercent);
+	});
+
 	// Menu Letter Animation
 	const letterWrapClass = "letter-wrap";
 	const letterWrapElements = document.getElementsByClassName(letterWrapClass);
