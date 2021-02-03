@@ -3,9 +3,13 @@ figure img {
 	width: auto;
 }
 
-.megaphone-img {
-	position: absolute;
-	height: 200px;
-	right: 50px;
-	top: 20vh;
+#bilbord {
+	position: relative;
+
+	.megaphone-img {
+		position: absolute;
+		height: 200px;
+		right: 50px;
+		top: 30vh;
+	}
 }

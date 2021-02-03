@@ -43,7 +43,7 @@
 		}
 
 		&--middle-social {
-			border-color: $primary-color;
+			border-color: $senary-color;
 		}
 
 		&--premium-social {
@@ -78,7 +78,7 @@
 		}
 
 		&--middle-social {
-			background: $primary-color;
+			background: $senary-color;
 		}
 
 		&--premium-social {
@@ -93,6 +93,7 @@
 		width: 100%;
 		height: 100px;
 		padding: 1rem;
+		color: $white;
 		border-radius: 0.3rem 0.3rem 0 0;
 
 		&--standard {
@@ -142,11 +143,11 @@
 		&--middle-social {
 			background: linear-gradient(
 				0.45turn,
-				lighten($primary-color, 20%),
-				lighten($primary-color, 10%),
-				darken($primary-color, 10%),
-				darken($primary-color, 20%),
-				darken($primary-color, 30%)
+				lighten($senary-color, 20%),
+				lighten($senary-color, 10%),
+				darken($senary-color, 10%),
+				darken($senary-color, 20%),
+				darken($senary-color, 30%)
 			);
 		}
 
@@ -166,8 +167,9 @@
 		}
 	}
 
-	&__pricing {
+	&__prices {
 		width: 100%;
+		color: $white;
 
 		&--standard {
 			background: $primary-color;
@@ -186,7 +188,7 @@
 		}
 
 		&--middle-social {
-			background: $primary-color;
+			background: $senary-color;
 		}
 
 		&--premium-social {
@@ -254,10 +256,10 @@
 		}
 
 		&--middle-social {
-			border-color: $primary-color;
+			border-color: $senary-color;
 
 			span {
-				color: $primary-color;
+				color: $senary-color;
 			}
 		}
 
@@ -318,11 +320,11 @@
 		}
 
 		&--middle-social {
-			border-color: $primary-color;
+			border-color: $senary-color;
 
 			h4,
 			span {
-				color: $primary-color;
+				color: $senary-color;
 			}
 		}
 
@@ -407,11 +409,11 @@
 
 		&--middle-social {
 			.btn {
-				background: $primary-color;
+				background: $senary-color;
 
 				&:hover {
-					background-color: $primary-color;
-					box-shadow: 0 1rem 1.5rem $primary-color-transparent;
+					background-color: $senary-color;
+					box-shadow: 0 1rem 1.5rem $senary-color-transparent;
 				}
 			}
 		}
