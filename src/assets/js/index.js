@@ -52,6 +52,11 @@ window.onload = function () {
 		hoverFunc, unhoverFunc;
 	});
 
+	// Mobile Menu
+	$(".menu-toggle").on("click", function () {
+		$("body").toggleClass("open");
+	});
+
 	// Progress Bar
 	let scrollTop;
 	let viewportHeight;

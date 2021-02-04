@@ -5,3 +5,12 @@
 	-o-transition: $what $time $how;
 	transition: $what $time $how;
 }
+
+@mixin position-center {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
