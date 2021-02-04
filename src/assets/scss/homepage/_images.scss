@@ -10,6 +10,75 @@ figure img {
 		position: absolute;
 		height: 200px;
 		right: 50px;
-		top: 30vh;
+		top: 20vh;
+	}
+
+	.bomb-img {
+		height: 180px;
+		margin-left: 10vw;
+	}
+}
+
+.drone {
+	position: relative;
+
+	.lightbulb-img {
+		height: 210px;
+		margin-left: 20vw;
+	}
+
+	.clock-img {
+		position: absolute;
+		height: 270px;
+		left: 50px;
+		top: 40vh;
+	}
+
+	.rocket-img {
+		position: absolute;
+		height: 250px;
+		right: 20px;
+		top: 20vh;
+	}
+}
+
+.pricing {
+	position: relative;
+
+	.mobile-img {
+		position: absolute;
+		height: 250px;
+		right: 20px;
+		top: 60vh;
+	}
+
+	.timebomb-img {
+		position: absolute;
+		height: 170px;
+		left: 50px;
+		top: 10vh;
+	}
+}
+
+.contact {
+	position: relative;
+
+	.zap-img {
+		height: 200px;
+		margin-left: 30vw;
+	}
+
+	.mouth-img {
+		position: absolute;
+		height: 170px;
+		left: 200px;
+		top: 40vh;
+	}
+
+	.phone-img {
+		position: absolute;
+		height: 350px;
+		right: 20px;
+		top: 60vh;
 	}
 }
