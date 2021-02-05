@@ -1,7 +1,5 @@
 .pricing {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center;
 
 	h2 {
 		margin-bottom: 2rem;

@@ -20,10 +20,7 @@ h4 {
 
 // Buttons
 .btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	@include flex-center;
 	min-width: 10rem;
 	height: 50px;
 	background: $primary-color;
@@ -50,8 +47,5 @@ h4 {
 
 // Class to center all content
 .center-all {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	@include flex-center;
 }
