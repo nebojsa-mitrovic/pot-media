@@ -51,21 +51,14 @@
 	}
 
 	&__logo {
-		height: 70px;
-		width: auto;
-
 		@media (max-width: 992px) {
-			height: 150px;
-			top: 70px;
-			left: 40%;
-			position: fixed;
+			width: 100%;
 			@include flex-center;
 		}
 
-		@media (max-width: 576px) {
-			left: 33%;
-			top: 20px;
-			height: 100px;
+		img {
+			width: 150px;
+			position: relative;
 		}
 	}
 
@@ -107,7 +100,6 @@
 
 @media (max-width: 992px) {
 	.menu-toggle {
-		opacity: 0.6;
 		background-color: transparent;
 		position: fixed;
 		z-index: 200;
