@@ -1,7 +1,11 @@
 .banner {
-	height: 100vh;
 	@include flex-center;
 	flex-flow: column;
+
+	@media (max-width: 576px) {
+		@include rotate(-90deg);
+		width: 500px;
+	}
 
 	&__headline {
 		-webkit-animation: spin 2s linear infinite;
