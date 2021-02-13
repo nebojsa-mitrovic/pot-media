@@ -2,6 +2,10 @@
 	height: 100vh;
 	transition: all 1s;
 	overflow: hidden;
+
+	@media (max-width: 992px) {
+		height: initial;
+	}
 }
 
 .primary-color {
