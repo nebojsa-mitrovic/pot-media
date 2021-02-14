@@ -2,7 +2,13 @@
 	@include flex-center;
 	flex-flow: column;
 
+	@media (max-width: 767px) {
+		height: 110vh;
+	}
+
 	@media (max-width: 576px) {
+		justify-content: end;
+		padding-top: 100px;
 		@include rotate(-90deg);
 		width: 500px;
 	}

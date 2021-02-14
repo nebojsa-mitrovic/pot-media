@@ -12,6 +12,10 @@
 		line-height: 2;
 		font-weight: 600;
 
+		@media (max-width: 576px) {
+			font-size: 1.5em;
+		}
+
 		span {
 			background-image: linear-gradient(
 				120deg,
