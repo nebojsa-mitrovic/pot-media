@@ -34,26 +34,314 @@
 
 		&--standard {
 			border-color: $primary-color;
+
+			.pricing {
+				&__icon {
+					background: $primary-color;
+				}
+
+				&__headline {
+					background: linear-gradient(
+						0.45turn,
+						lighten($primary-color, 20%),
+						lighten($primary-color, 10%),
+						darken($primary-color, 10%),
+						darken($primary-color, 20%),
+						darken($primary-color, 30%)
+					);
+				}
+
+				&__prices {
+					background: $primary-color;
+				}
+
+				&__info {
+					border-color: $primary-color;
+
+					span {
+						color: $primary-color;
+					}
+				}
+
+				&__discount {
+					border-color: $primary-color;
+
+					span {
+						color: $primary-color;
+					}
+				}
+
+				&__btn {
+					.btn {
+						background: $primary-color;
+
+						&:hover {
+							background-color: $primary-color;
+							box-shadow: 0 1rem 1.5rem $primary-color-transparent;
+						}
+					}
+				}
+			}
 		}
 
 		&--middle {
 			border-color: $quaternary-color;
+
+			.pricing {
+				&__icon {
+					background: $quaternary-color;
+				}
+
+				&__headline {
+					background: linear-gradient(
+						0.45turn,
+						lighten($quaternary-color, 20%),
+						lighten($quaternary-color, 10%),
+						darken($quaternary-color, 10%),
+						darken($quaternary-color, 20%),
+						darken($quaternary-color, 30%)
+					);
+				}
+
+				&__prices {
+					background: $quaternary-color;
+				}
+
+				&__info {
+					border-color: $quaternary-color;
+
+					span {
+						color: $quaternary-color;
+					}
+				}
+
+				&__discount {
+					border-color: $quaternary-color;
+
+					span {
+						color: $quaternary-color;
+					}
+				}
+
+				&__btn {
+					.btn {
+						background: $quaternary-color;
+
+						&:hover {
+							background-color: $quaternary-color;
+							box-shadow: 0 1rem 1.5rem $quaternary-color-transparent;
+						}
+					}
+				}
+			}
 		}
 
 		&--premium {
 			border-color: $quinary-color;
+
+			.pricing {
+				&__icon {
+					background: $quinary-color;
+				}
+
+				&__headline {
+					background: linear-gradient(
+						0.45turn,
+						lighten($quinary-color, 20%),
+						lighten($quinary-color, 10%),
+						darken($quinary-color, 10%),
+						darken($quinary-color, 20%),
+						darken($quinary-color, 30%)
+					);
+				}
+
+				&__prices {
+					background: $quinary-color;
+				}
+
+				&__info {
+					border-color: $quinary-color;
+
+					span {
+						color: $quinary-color;
+					}
+				}
+
+				&__discount {
+					border-color: $quinary-color;
+
+					span {
+						color: $quinary-color;
+					}
+				}
+
+				&__btn {
+					.btn {
+						background: $quinary-color;
+
+						&:hover {
+							background-color: $quinary-color;
+							box-shadow: 0 1rem 1.5rem $quinary-color-transparent;
+						}
+					}
+				}
+			}
 		}
 
 		&--standard-social {
 			border-color: $tertiary-color;
+
+			.pricing {
+				&__icon {
+					background: $tertiary-color;
+				}
+
+				&__headline {
+					background: linear-gradient(
+						0.45turn,
+						lighten($tertiary-color, 20%),
+						lighten($tertiary-color, 10%),
+						darken($tertiary-color, 10%),
+						darken($tertiary-color, 20%),
+						darken($tertiary-color, 30%)
+					);
+				}
+
+				&__prices {
+					background: $tertiary-color;
+				}
+
+				&__info {
+					border-color: $tertiary-color;
+
+					span {
+						color: $tertiary-color;
+					}
+				}
+
+				&__discount {
+					border-color: $tertiary-color;
+
+					span {
+						color: $tertiary-color;
+					}
+				}
+
+				&__btn {
+					.btn {
+						background: $tertiary-color;
+
+						&:hover {
+							background-color: $tertiary-color;
+							box-shadow: 0 1rem 1.5rem $tertiary-color-transparent;
+						}
+					}
+				}
+			}
 		}
 
 		&--middle-social {
 			border-color: $senary-color;
+
+			.pricing {
+				&__icon {
+					background: $senary-color;
+				}
+
+				&__headline {
+					background: linear-gradient(
+						0.45turn,
+						lighten($senary-color, 20%),
+						lighten($senary-color, 10%),
+						darken($senary-color, 10%),
+						darken($senary-color, 20%),
+						darken($senary-color, 30%)
+					);
+				}
+
+				&__prices {
+					background: $senary-color;
+				}
+
+				&__info {
+					border-color: $senary-color;
+
+					span {
+						color: $senary-color;
+					}
+				}
+
+				&__discount {
+					border-color: $senary-color;
+
+					span {
+						color: $senary-color;
+					}
+				}
+
+				&__btn {
+					.btn {
+						background: $senary-color;
+
+						&:hover {
+							background-color: $senary-color;
+							box-shadow: 0 1rem 1.5rem $senary-color-transparent;
+						}
+					}
+				}
+			}
 		}
 
 		&--premium-social {
 			border-color: $secondary-color;
+
+			.pricing {
+				&__icon {
+					background: $secondary-color;
+				}
+
+				&__headline {
+					background: linear-gradient(
+						0.45turn,
+						lighten($secondary-color, 20%),
+						lighten($secondary-color, 10%),
+						darken($secondary-color, 10%),
+						darken($secondary-color, 20%),
+						darken($secondary-color, 30%)
+					);
+				}
+
+				&__prices {
+					background: $secondary-color;
+				}
+
+				&__info {
+					border-color: $secondary-color;
+
+					span {
+						color: $secondary-color;
+					}
+				}
+
+				&__discount {
+					border-color: $secondary-color;
+
+					span {
+						color: $secondary-color;
+					}
+				}
+
+				&__btn {
+					.btn {
+						background: $secondary-color;
+
+						&:hover {
+							background-color: $secondary-color;
+							box-shadow: 0 1rem 1.5rem $secondary-color-transparent;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -66,30 +354,6 @@
 		color: $white;
 		font-size: 3em;
 		box-shadow: 0 1rem 1.5rem 0 rgba($dark-color, 0.375), inset 0 -3px 0 0 rgba($dark-color, 0.125);
-
-		&--standard {
-			background: $primary-color;
-		}
-
-		&--middle {
-			background: $quaternary-color;
-		}
-
-		&--premium {
-			background: $quinary-color;
-		}
-
-		&--standard-social {
-			background: $tertiary-color;
-		}
-
-		&--middle-social {
-			background: $senary-color;
-		}
-
-		&--premium-social {
-			background: $secondary-color;
-		}
 	}
 
 	&__headline {
@@ -101,72 +365,6 @@
 		padding: 1rem;
 		color: $white;
 		border-radius: 0.3rem 0.3rem 0 0;
-
-		&--standard {
-			background: linear-gradient(
-				0.45turn,
-				lighten($primary-color, 20%),
-				lighten($primary-color, 10%),
-				darken($primary-color, 10%),
-				darken($primary-color, 20%),
-				darken($primary-color, 30%)
-			);
-		}
-
-		&--middle {
-			background: linear-gradient(
-				0.45turn,
-				lighten($quaternary-color, 20%),
-				lighten($quaternary-color, 10%),
-				darken($quaternary-color, 10%),
-				darken($quaternary-color, 20%),
-				darken($quaternary-color, 30%)
-			);
-		}
-
-		&--premium {
-			background: linear-gradient(
-				0.45turn,
-				lighten($quinary-color, 20%),
-				lighten($quinary-color, 10%),
-				darken($quinary-color, 10%),
-				darken($quinary-color, 20%),
-				darken($quinary-color, 30%)
-			);
-		}
-
-		&--standard-social {
-			background: linear-gradient(
-				0.45turn,
-				lighten($tertiary-color, 20%),
-				lighten($tertiary-color, 10%),
-				darken($tertiary-color, 10%),
-				darken($tertiary-color, 20%),
-				darken($tertiary-color, 30%)
-			);
-		}
-
-		&--middle-social {
-			background: linear-gradient(
-				0.45turn,
-				lighten($senary-color, 20%),
-				lighten($senary-color, 10%),
-				darken($senary-color, 10%),
-				darken($senary-color, 20%),
-				darken($senary-color, 30%)
-			);
-		}
-
-		&--premium-social {
-			background: linear-gradient(
-				0.45turn,
-				lighten($secondary-color, 20%),
-				lighten($secondary-color, 10%),
-				darken($secondary-color, 10%),
-				darken($secondary-color, 20%),
-				darken($secondary-color, 30%)
-			);
-		}
 
 		h3 {
 			font-size: 1.5em;
@@ -180,30 +378,6 @@
 	&__prices {
 		width: 100%;
 		color: $white;
-
-		&--standard {
-			background: $primary-color;
-		}
-
-		&--middle {
-			background: $quaternary-color;
-		}
-
-		&--premium {
-			background: $quinary-color;
-		}
-
-		&--standard-social {
-			background: $tertiary-color;
-		}
-
-		&--middle-social {
-			background: $senary-color;
-		}
-
-		&--premium-social {
-			background: $secondary-color;
-		}
 	}
 
 	.price {
@@ -225,64 +399,27 @@
 	}
 
 	&__info {
+		height: 100px;
 		margin: 2rem 1.5rem 0.5rem 1.5rem;
 		border-bottom: 2px solid;
 
 		@media (max-width: 1440px) {
 			margin: 1rem 1rem 0.5rem 1rem;
+			height: initial;
+		}
+
+		@media (max-width: 1024px) {
+			margin: 1rem 1rem 0.5rem 1rem;
+			height: 130px;
+		}
+
+		@media (max-width: 576px) {
+			height: initial;
 		}
 
 		span {
 			font-size: 1.1em;
 			font-weight: bold;
-		}
-
-		&--standard {
-			border-color: $primary-color;
-
-			span {
-				color: $primary-color;
-			}
-		}
-
-		&--middle {
-			border-color: $quaternary-color;
-
-			span {
-				color: $quaternary-color;
-			}
-		}
-
-		&--premium {
-			border-color: $quinary-color;
-
-			span {
-				color: $quinary-color;
-			}
-		}
-
-		&--standard-social {
-			border-color: $tertiary-color;
-
-			span {
-				color: $tertiary-color;
-			}
-		}
-
-		&--middle-social {
-			border-color: $senary-color;
-
-			span {
-				color: $senary-color;
-			}
-		}
-
-		&--premium-social {
-			border-color: $secondary-color;
-
-			span {
-				color: $secondary-color;
-			}
 		}
 	}
 
@@ -299,60 +436,6 @@
 
 		span {
 			font-style: italic;
-		}
-
-		&--standard {
-			border-color: $primary-color;
-
-			h4,
-			span {
-				color: $primary-color;
-			}
-		}
-
-		&--middle {
-			border-color: $quaternary-color;
-
-			h4,
-			span {
-				color: $quaternary-color;
-			}
-		}
-
-		&--premium {
-			border-color: $quinary-color;
-
-			h4,
-			span {
-				color: $quinary-color;
-			}
-		}
-
-		&--standard-social {
-			border-color: $tertiary-color;
-
-			h4,
-			span {
-				color: $tertiary-color;
-			}
-		}
-
-		&--middle-social {
-			border-color: $senary-color;
-
-			h4,
-			span {
-				color: $senary-color;
-			}
-		}
-
-		&--premium-social {
-			border-color: $secondary-color;
-
-			h4,
-			span {
-				color: $secondary-color;
-			}
 		}
 	}
 
@@ -386,72 +469,6 @@
 
 			&:hover {
 				transform: translateY(-0.5rem);
-			}
-		}
-
-		&--standard {
-			.btn {
-				background: $primary-color;
-
-				&:hover {
-					background-color: $primary-color;
-					box-shadow: 0 1rem 1.5rem $primary-color-transparent;
-				}
-			}
-		}
-
-		&--middle {
-			.btn {
-				background: $quaternary-color;
-
-				&:hover {
-					background-color: $quaternary-color;
-					box-shadow: 0 1rem 1.5rem $quaternary-color-transparent;
-				}
-			}
-		}
-
-		&--premium {
-			.btn {
-				background: $quinary-color;
-
-				&:hover {
-					background-color: $quinary-color;
-					box-shadow: 0 1rem 1.5rem $quinary-color-transparent;
-				}
-			}
-		}
-
-		&--standard-social {
-			.btn {
-				background: $tertiary-color;
-
-				&:hover {
-					background-color: $tertiary-color;
-					box-shadow: 0 1rem 1.5rem $tertiary-color-transparent;
-				}
-			}
-		}
-
-		&--middle-social {
-			.btn {
-				background: $senary-color;
-
-				&:hover {
-					background-color: $senary-color;
-					box-shadow: 0 1rem 1.5rem $senary-color-transparent;
-				}
-			}
-		}
-
-		&--premium-social {
-			.btn {
-				background: $secondary-color;
-
-				&:hover {
-					background-color: $secondary-color;
-					box-shadow: 0 1rem 1.5rem $secondary-color-transparent;
-				}
 			}
 		}
 	}
